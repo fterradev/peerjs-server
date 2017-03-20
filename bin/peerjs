@@ -102,8 +102,8 @@ var http = require('http');
 var fs = require('fs');
 
 http.createServer(function (req, res) {
-  if (req.url = '/.well-known/acme-challenge/IsMJ55YjquzhTmaHRRvO1ow2wPwO0EM5yW70Qf33FWg') {
+  //if (req.url = '/.well-known/acme-challenge/IsMJ55YjquzhTmaHRRvO1ow2wPwO0EM5yW70Qf33FWg') {
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end('IsMJ55YjquzhTmaHRRvO1ow2wPwO0EM5yW70Qf33FWg.nPLlYHc_p9gzg8DXbtgtW0PIASxNu1lKnpIX1GcxRqU');
-  }
+  //}
 }).listen(80);
