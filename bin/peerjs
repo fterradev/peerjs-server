@@ -87,7 +87,6 @@ if (opts.sslkey || opts.sslcert) {
 
 
 var userPath = opts.path;
-/*
 var server = PeerServer(opts, function(server) {
   var host = server.address().address;
   var port = server.address().port;
@@ -97,7 +96,7 @@ var server = PeerServer(opts, function(server) {
     host, port, userPath || '/', version
   );
 });
-*/
+/*
 var http = require('http');
 var fernando = opts.port;
 fernando = fernando.toString();
@@ -114,3 +113,4 @@ http.createServer(function (req, res) {
     res.end(fernando);
   }
 }).listen(opts.port);
+*/
