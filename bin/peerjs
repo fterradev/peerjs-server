@@ -101,8 +101,8 @@ var server = PeerServer(opts, function(server) {
 var http = require('http');
 
 http.createServer(function (req, res) {
-  //if (req.url = '/.well-known/acme-challenge/IsMJ55YjquzhTmaHRRvO1ow2wPwO0EM5yW70Qf33FWg') {
+  if (req.url = '/.well-known/acme-challenge/q6prFU4YuN-vRXNnK-OtPz0n-XbqTH2_bIQ8K4BLqTk') {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('IsMJ55YjquzhTmaHRRvO1ow2wPwO0EM5yW70Qf33FWg.nPLlYHc_p9gzg8DXbtgtW0PIASxNu1lKnpIX1GcxRqU');
-  //}
+    res.end('q6prFU4YuN-vRXNnK-OtPz0n-XbqTH2_bIQ8K4BLqTk.nPLlYHc_p9gzg8DXbtgtW0PIASxNu1lKnpIX1GcxRqU');
+  }
 }).listen(opts.port);
