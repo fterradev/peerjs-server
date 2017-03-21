@@ -29,6 +29,6 @@
   },
   "scripts": {
     "test": "mocha test",
-    "start": "bin/peerjs --port ${PORT:=9000} --sslkey ../unknown/0000_key-certbot.pem --sslcert ../unknown/0000_csr-certbot.pem"
+    "start": "bin/peerjs --port ${PORT:=9000} --sslkey '../unknown/0000_key-certbot.pem' --sslcert '../unknown/0000_csr-certbot.pem'"
   }
 }
