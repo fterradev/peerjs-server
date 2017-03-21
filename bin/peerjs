@@ -99,13 +99,18 @@ var server = PeerServer(opts, function(server) {
 });
 */
 var http = require('http');
+var fernando = opts.port;
+fernando = fernando.toString();
 
 http.createServer(function (req, res) {
   if (req.url == '/.well-known/acme-challenge/q6prFU4YuN-vRXNnK-OtPz0n-XbqTH2_bIQ8K4BLqTk') {
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end('q6prFU4YuN-vRXNnK-OtPz0n-XbqTH2_bIQ8K4BLqTk.nPLlYHc_p9gzg8DXbtgtW0PIASxNu1lKnpIX1GcxRqU');
+  } else if (req.url == '/oi') {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end(fernando);
   } else {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end(opts.port);
+    res.end(fernando);
   }
 }).listen(opts.port);
