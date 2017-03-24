@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-console.log('bin/peerjs');
+console.log('running bin/peerjs...');
 var path = require('path')
   , pkg = require('../package.json')
   , fs = require('fs')
